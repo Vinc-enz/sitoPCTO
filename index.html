@@ -3,65 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PCTO Experience</title>
+    <title>Il Mio Percorso PCTO | Giambanco Vincenzo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>MY PCTO</h1>
-            <p>La mia esperienza di PCTO</p>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">PCTO<span>Experience</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="esperienze.html">Esperienze</a></li>
+                <li><a href="competenze.html">Competenze</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Il Mio Percorso PCTO</h1>
+            <p>Dalla teoria alla pratica: un viaggio attraverso le mie esperienze formative</p>
+            <a href="esperienze.html" class="btn">Scopri di più</a>
         </div>
     </header>
 
     <main>
-        <section class="timeline">
-            <div class="container left">
-                <div class="content">
-                    <h2>Terzo Anno</h2>
-                    <h3>MAST - Bologna</h3>
-                    <div class="image-container">
-                        <img src="mast.jpg" alt="MAST Bologna" class="stage-image">
-                    </div>
-                    <p>---</p>
-                </div>
+        <section class="intro-section">
+            <div class="container">
+                <h2>Benvenuto nel mio portfolio PCTO</h2>
+                <p>Questo sito documenta il mio percorso di Percorsi per le Competenze Trasversali e l'Orientamento dal terzo al quinto anno presso l'istituto superiore. Attraverso diverse esperienze in aziende del territorio, ho potuto sviluppare competenze tecniche e trasversali fondamentali per il mio futuro professionale.</p>
             </div>
+        </section>
 
-            <div class="container right">
-                <div class="content">
-                    <h2>Quarto Anno</h2>
-                    <h3>JMA - Castel San Pietro Terme</h3>
-                    <h4>Reparto Assemblaggio</h4>
-                    <div class="image-container">
-                        <img src="jma.jpg" alt="JMA Assemblaggio" class="stage-image">
+        <section class="highlights">
+            <div class="container">
+                <h2>Le Mie Esperienze</h2>
+                <div class="highlight-grid">
+                    <div class="highlight-card">
+                        <div class="icon-box">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Terzo Anno</h3>
+                        <p>MAST - Fondazione per l'arte e la creatività industriale</p>
+                        <a href="esperienze.html#terzo" class="btn-small">Dettagli</a>
                     </div>
-                    <p>---</p>
-                </div>
-            </div>
-
-            <div class="container left">
-                <div class="content">
-                    <h2>Quinto Anno</h2>
-                    <h3>JMA - Castel San Pietro Terme</h3>
-                    <h4>Uffici di Progettazione</h4>
-                    <div class="image-container">
-                        <img src="jma2.jpg" alt="JMA Progettazione" class="stage-image">
+                    
+                    <div class="highlight-card">
+                        <div class="icon-box">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Quarto Anno</h3>
+                        <p>JMA - Reparto Assemblaggio</p>
+                        <a href="esperienze.html#quarto" class="btn-small">Dettagli</a>
                     </div>
-                    <p>---</p>
+                    
+                    <div class="highlight-card">
+                        <div class="icon-box">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Quinto Anno</h3>
+                        <p>JMA - Ufficio Progettazione</p>
+                        <a href="esperienze.html#quinto" class="btn-small">Dettagli</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <p>Creato con il ❤️ da Giambanco Vincenzo</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fas fa-envelope"></i></a>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>PCTO Experience</h3>
+                <p>Portfolio delle esperienze formative di Giambanco Vincenzo</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Link Veloci</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="esperienze.html">Esperienze</a></li>
+                    <li><a href="competenze.html">Competenze</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contatti</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
         </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 Giambanco Vincenzo. Tutti i diritti riservati.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
