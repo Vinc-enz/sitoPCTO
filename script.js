@@ -1,15 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Page loader
-    const pageLoader = document.getElementById('pageLoader');
-    
-    // Hide loader after page is loaded
-    window.addEventListener('load', function() {
-        setTimeout(function() {
-            pageLoader.classList.add('hidden');
-        }, 0);
-    });
-    
-    // Mobile menu toggle
+        // Mobile menu toggle
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
     
