@@ -3,740 +3,307 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esperienze PCTO | Giambanco Vincenzo</title>
-    
-    <!-- Preconnect per performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Font moderni -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- CSS e Icone -->
+    <title>Esperienze - Vincenzo Giambanco</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Meta tags -->
-    <meta name="description" content="Esperienze PCTO di Giambanco Vincenzo - Dettagli delle attività svolte durante il percorso formativo">
-    <meta name="keywords" content="PCTO, esperienze, MAST, JMA, assemblaggio, progettazione, formazione">
-    <meta name="author" content="Giambanco Vincenzo">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar -->
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">
-                <span class="logo-icon">
-                    <img src="icons/logo.png" alt="Logo PCTO" />
-                </span>
-                PCTO<span class="logo-accent">Experience</span>
-            </a>
-            
-            <ul class="nav-menu" id="navMenu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">
-                        <i class="fas fa-home"></i>
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="esperienze.html" class="nav-link active">
-                        <i class="fas fa-briefcase"></i>
-                        <span>Esperienze</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="competenze.html" class="nav-link">
-                        <i class="fas fa-star"></i>
-                        <span>Competenze</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="contatti.html" class="nav-link">
-                        <i class="fas fa-envelope"></i>
-                        <span>Contatti</span>
-                    </a>
-                </li>
-            </ul>
-            
-            <div class="hamburger" id="hamburger" aria-label="Menu di navigazione">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-brand">
+                <i class="fas fa-graduation-cap brand-icon"></i>
+                <span>Vincenzo Giambanco</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="esperienze.html" class="nav-link active">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Esperienze</span>
+                </a>
+                <a href="competenze.html" class="nav-link">
+                    <i class="fas fa-cogs"></i>
+                    <span>Competenze</span>
+                </a>
+                <a href="contatti.html" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contatti</span>
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
-    <!-- Header della pagina -->
-    <header class="subpage-header experiences-header">
-        <div class="header-background">
-            <div class="header-particles"></div>
-            <div class="header-gradient"></div>
-        </div>
-        
-        <div class="header-content">
-            <div class="breadcrumb">
-                <a href="index.html"><i class="fas fa-home"></i> Home</a>
-                <span class="separator">/</span>
-                <span class="current">Esperienze</span>
-            </div>
-            
-            <h1 class="page-title animate-fade-up">
-                Le Mie <span class="gradient-text">Esperienze</span>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">
+                <i class="fas fa-briefcase"></i>
+                Le Mie Esperienze PCTO
             </h1>
-            <p class="page-subtitle animate-fade-up">
-                Un resoconto dettagliato delle mie attività <strong>PCTO</strong> attraverso tre anni formativi
-            </p>
-            
-            <!-- Timeline navigator -->
-            <div class="timeline-nav animate-fade-up">
-                <a href="#terzo" class="timeline-link">
-                    <span class="year">2019-2020</span>
-                    <span class="label">Terzo Anno</span>
-                </a>
-                <a href="#quarto" class="timeline-link">
-                    <span class="year">2020-2021</span>
-                    <span class="label">Quarto Anno</span>
-                </a>
-                <a href="#quinto" class="timeline-link">
-                    <span class="year">2021-2022</span>
-                    <span class="label">Quinto Anno</span>
-                </a>
-            </div>
+            <p class="page-subtitle">Un percorso di crescita attraverso tre anni di formazione pratica</p>
         </div>
-    </header>
+    </section>
 
-    <main>
-        <!-- Progress indicator -->
-        <div class="reading-progress">
-            <div class="progress-bar" id="progressBar"></div>
-        </div>
-
-        <!-- Terzo Anno - MAST -->
-        <section id="terzo" class="experience-section first-experience">
-            <div class="container">
-                <div class="experience-wrapper">
-                    <div class="experience-header animate-slide-up">
-                        <div class="experience-meta">
-                            <div class="experience-icon">
-                                <img src="icons/industry.png" alt="Icona industria" />
-                            </div>
-                            <div class="experience-badges">
-                                <span class="year-badge">2019-2020</span>
-                                <span class="type-badge">Terzo Anno</span>
-                            </div>
-                        </div>
-                        
-                        <div class="experience-title-section">
-                            <h2 class="experience-title">
-                                MAST <span class="gradient-text">Bologna</span>
-                            </h2>
-                            <p class="experience-subtitle">
-                                Manifattura di Arti, Sperimentazione e Tecnologia
-                            </p>
+    <!-- Experiences Section -->
+    <section class="experiences">
+        <div class="container">
+            <!-- Experience 1: MAST -->
+            <div class="experience-card" data-aos="fade-up">
+                <div class="experience-header">
+                    <div class="experience-image">
+                        <img src="mast.jpg" alt="MAST Bologna" class="exp-img">
+                        <div class="experience-overlay">
+                            <div class="experience-year">2022-2023</div>
                         </div>
                     </div>
-                    
-                    <div class="experience-content">
-                        <div class="experience-media animate-slide-left">
-                            <div class="media-container">
-                                <img src="mast.jpg" alt="MAST Bologna" class="experience-image" />
-                                <div class="media-overlay">
-                                    <div class="media-info">
-                                        <h4>MAST Bologna</h4>
-                                        <p>Fondazione per l'innovazione industriale</p>
-                                    </div>
+                    <div class="experience-info">
+                        <h2 class="experience-title">
+                            <i class="fas fa-university"></i>
+                            MAST - Bologna
+                        </h2>
+                        <div class="experience-meta">
+                            <span class="experience-grade">3° Superiore</span>
+                            <span class="experience-duration">Anno Scolastico 2022-2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-description">
+                        <h3>Descrizione dell'Esperienza</h3>
+                        <p>Durante il terzo anno delle superiori, ho avuto l'opportunità di svolgere il mio primo PCTO presso il MAST (Manifattura di Arti, Sperimentazione e Tecnologia) di Bologna. Questa esperienza mi ha introdotto al mondo aziendale attraverso due attività principali.</p>
+                        
+                        <h4>Attività Svolte</h4>
+                        <div class="activity-grid">
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <h5>Visita Guidata Aziendale</h5>
+                                    <p>Esplorazione approfondita della struttura aziendale, comprensione dei processi produttivi e conoscenza delle diverse figure professionali presenti nell'organizzazione.</p>
                                 </div>
                             </div>
-                            
-                            <div class="experience-stats">
-                                <div class="stat-item">
-                                    <i class="fas fa-clock"></i>
-                                    <div>
-                                        <strong>80 ore</strong>
-                                        <span>Durata totale</span>
-                                    </div>
-                                </div>
-                                <div class="stat-item">
+                            <div class="activity-item">
+                                <div class="activity-icon">
                                     <i class="fas fa-users"></i>
-                                    <div>
-                                        <strong>15 studenti</strong>
-                                        <span>Gruppo di lavoro</span>
-                                    </div>
                                 </div>
-                                <div class="stat-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <div>
-                                        <strong>Bologna</strong>
-                                        <span>Sede</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="experience-details animate-slide-right">
-                            <div class="detail-section">
-                                <h3>
-                                    <i class="fas fa-building"></i>
-                                    Descrizione dell'azienda
-                                </h3>
-                                <p>Il MAST (Manifattura di Arti, Sperimentazione e Tecnologia) è una fondazione innovativa che promuove l'arte e la creatività industriale attraverso mostre, laboratori e attività educative. Rappresenta un ponte unico tra tradizione manifatturiera e innovazione tecnologica.</p>
-                            </div>
-                            
-                            <div class="detail-section">
-                                <h3>
-                                    <i class="fas fa-tasks"></i>
-                                    Attività svolte
-                                </h3>
-                                <div class="activities-grid">
-                                    <div class="activity-item">
-                                        <div class="activity-icon">
-                                            <i class="fas fa-eye"></i>
-                                        </div>
-                                        <div class="activity-content">
-                                            <h4>Visita guidata</h4>
-                                            <p>Esplorazione degli spazi espositivi e comprensione del processo creativo</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="activity-item">
-                                        <div class="activity-icon">
-                                            <i class="fas fa-tools"></i>
-                                        </div>
-                                        <div class="activity-content">
-                                            <h4>Workshop tecnologici</h4>
-                                            <p>Partecipazione attiva a laboratori sulle tecnologie industriali</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="activity-item">
-                                        <div class="activity-icon">
-                                            <i class="fas fa-chart-line"></i>
-                                        </div>
-                                        <div class="activity-content">
-                                            <h4>Analisi casi studio</h4>
-                                            <p>Studio approfondito di casi di innovazione industriale</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="detail-section">
-                                <h3>
-                                    <i class="fas fa-graduation-cap"></i>
-                                    Competenze acquisite
-                                </h3>
-                                <div class="skills-container">
-                                    <div class="skill-item primary">
-                                        <i class="fas fa-eye"></i>
-                                        <span>Osservazione</span>
-                                    </div>
-                                    <div class="skill-item secondary">
-                                        <i class="fas fa-users"></i>
-                                        <span>Teamwork</span>
-                                    </div>
-                                    <div class="skill-item accent">
-                                        <i class="fas fa-lightbulb"></i>
-                                        <span>Creatività</span>
-                                    </div>
-                                    <div class="skill-item primary">
-                                        <i class="fas fa-comments"></i>
-                                        <span>Comunicazione</span>
-                                    </div>
+                                <div class="activity-content">
+                                    <h5>Progetto di Team</h5>
+                                    <p>Collaborazione con il mio gruppo per sviluppare un progetto di re-design di un prodotto, culminato in una presentazione professionale delle soluzioni proposte.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="experience-skills">
+                        <h4>Competenze Sviluppate</h4>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Lavoro di squadra</span>
+                            <span class="skill-tag">Presentazione</span>
+                            <span class="skill-tag">Design thinking</span>
+                            <span class="skill-tag">Problem solving</span>
+                            <span class="skill-tag">Comunicazione</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Quarto Anno - JMA Assemblaggio -->
-        <section id="quarto" class="experience-section">
-            <div class="container">
-                <div class="experience-wrapper reverse">
-                    <div class="experience-header animate-slide-up">
+            <!-- Experience 2: JMA Assembly -->
+            <div class="experience-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="experience-header">
+                    <div class="experience-image">
+                        <img src="jma.jpg" alt="JMA Castel San Pietro Terme" class="exp-img">
+                        <div class="experience-overlay">
+                            <div class="experience-year">2023-2024</div>
+                        </div>
+                    </div>
+                    <div class="experience-info">
+                        <h2 class="experience-title">
+                            <i class="fas fa-wrench"></i>
+                            JMA - Assemblaggio Componenti
+                        </h2>
                         <div class="experience-meta">
-                            <div class="experience-icon">
-                                <img src="icons/assembly.png" alt="Icona assemblaggio" />
-                            </div>
-                            <div class="experience-badges">
-                                <span class="year-badge">2020-2021</span>
-                                <span class="type-badge">Quarto Anno</span>
-                            </div>
+                            <span class="experience-grade">4° Superiore</span>
+                            <span class="experience-duration">Maggio - Giugno 2024</span>
                         </div>
+                    </div>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-description">
+                        <h3>Descrizione dell'Esperienza</h3>
+                        <p>Durante il quarto anno, ho trascorso un mese intensivo presso JMA a Castel San Pietro Terme, focalizzandomi sull'area di assemblaggio dei componenti. Questa esperienza pratica mi ha permesso di acquisire competenze tecniche specifiche nel settore dell'elettronica e delle telecomunicazioni.</p>
                         
-                        <div class="experience-title-section">
-                            <h2 class="experience-title">
-                                JMA <span class="gradient-text">Assemblaggio</span>
-                            </h2>
-                            <p class="experience-subtitle">
-                                Reparto Assemblaggio Meccanico di Precisione
-                            </p>
+                        <h4>Attività Svolte</h4>
+                        <div class="activity-grid">
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-microchip"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <h5>Assemblaggio Componenti</h5>
+                                    <p>Apprendimento delle tecniche di assemblaggio di componenti elettronici, utilizzo di strumenti specializzati e comprensione dei processi produttivi dell'azienda.</p>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-clipboard-check"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <h5>Controllo Qualità</h5>
+                                    <p>Partecipazione alle procedure di controllo qualità, verifica delle specifiche tecniche e comprensione degli standard di produzione industriale.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="experience-content">
-                        <div class="experience-details animate-slide-left">
-                            <div class="detail-section">
-                                <h3>
-                                    <i class="fas fa-building"></i>
-                                    Descrizione dell'azienda
-                                </h3>
-                                <p>JMA è un'azienda specializzata nella produzione di componenti meccanici di precisione per vari settori industriali. L'azienda si distingue per la qualità dei suoi prodotti e l'innovazione nei processi produttivi, rappresentando un'eccellenza nel panorama manifatturiero italiano.</p>
-                            </div>
-                            
-                            <div class="detail-section">
-                                <h3>
-                                    <i class="fas fa-tasks"></i>
-                                    Attività svolte
-                                </h3>
-                                <div class="activities-grid">
-                                    <div class="activity-item">
-                                        <div class="activity-icon">
-                                            <i class="fas fa-cogs"></i>
-                                        </div>
-                                        <div class="activity-content">
-                                            <h4>Assemblaggio componenti</h4>
-                                            <p>Montaggio di componenti meccanici seguendo specifiche tecniche precise</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="activity-item">
-                                        <div class="activity-icon">
-                                            <i class="fas fa-search"></i>
-                                        </div>
-                                        <div class="activity-content">
-                                            <h4>Controllo qualità</h4>
-                                            <p>Verifica della conformità dei prodotti agli standard aziendali</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="activity-item">
-                                        <div class="activity-icon">
-                                            <i class="fas fa-ruler-combined"></i>
-                                        </div>
-                                        <div class="activity-content">
-                                            <h4>Strumenti di misurazione</h4>
-                                            <p>Utilizzo di calibri, micrometri e altri strumenti di precisione</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="activity-item">
-                                        <div class="activity-icon">
-                                            <i class="fas fa-clipboard-list"></i>
-                                        </div>
-                                        <div class="activity-content">
-                                            <h4>Organizzazione postazione</h4>
-                                            <p>Gestione efficiente dello spazio di lavoro e degli strumenti</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="detail-section">
-                                <h3>
-                                    <i class="fas fa-graduation-cap"></i>
-                                    Competenze acquisite
-                                </h3>
-                                <div class="skills-container">
-                                    <div class="skill-item primary">
-                                        <i class="fas fa-crosshairs"></i>
-                                        <span>Precisione</span>
-                                    </div>
-                                    <div class="skill-item secondary">
-                                        <i class="fas fa-hands"></i>
-                                        <span>Manualità</span>
-                                    </div>
-                                    <div class="skill-item accent">
-                                        <i class="fas fa-clipboard-list"></i>
-                                        <span>Organizzazione</span>
-                                    </div>
-                                    <div class="skill-item primary">
-                                        <i class="fas fa-hard-hat"></i>
-                                        <span>Sicurezza sul lavoro</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="experience-media animate-slide-right">
-                            <div class="media-container">
-                                <img src="jma.jpg" alt="JMA Assemblaggio" class="experience-image" />
-                                <div class="media-overlay">
-                                    <div class="media-info">
-                                        <h4>JMA Assemblaggio</h4>
-                                        <p>Reparto produzione meccanica</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="experience-stats">
-                                <div class="stat-item">
-                                    <i class="fas fa-clock"></i>
-                                    <div>
-                                        <strong>80 ore</strong>
-                                        <span>Durata totale</span>
-                                    </div>
-                                </div>
-                                <div class="stat-item">
-                                    <i class="fas fa-cogs"></i>
-                                    <div>
-                                        <strong>Assemblaggio</strong>
-                                        <span>Reparto</span>
-                                    </div>
-                                </div>
-                                <div class="stat-item">
-                                    <i class="fas fa-industry"></i>
-                                    <div>
-                                        <strong>Meccanica</strong>
-                                        <span>Settore</span>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="experience-skills">
+                        <h4>Competenze Sviluppate</h4>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Assemblaggio hardware</span>
+                            <span class="skill-tag">Precisione tecnica</span>
+                            <span class="skill-tag">Controllo qualità</span>
+                            <span class="skill-tag">Uso strumenti</span>
+                            <span class="skill-tag">Procedure operative</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Quinto Anno - JMA Progettazione -->
-        <section id="quinto" class="experience-section">
-            <div class="container">
-                <div class="experience-wrapper">
-                    <div class="experience-header animate-slide-up">
+            <!-- Experience 3: JMA Design -->
+            <div class="experience-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="experience-header">
+                    <div class="experience-image">
+                        <img src="jma2.jpg" alt="JMA Progettazione" class="exp-img">
+                        <div class="experience-overlay">
+                            <div class="experience-year">2024-2025</div>
+                        </div>
+                    </div>
+                    <div class="experience-info">
+                        <h2 class="experience-title">
+                            <i class="fas fa-drafting-compass"></i>
+                            JMA - Progettazione e Simulazione
+                        </h2>
                         <div class="experience-meta">
-                            <div class="experience-icon">
-                                <img src="icons/design.png" alt="Icona progettazione" />
-                            </div>
-                            <div class="experience-badges">
-                                <span class="year-badge">2021-2022</span>
-                                <span class="type-badge">Quinto Anno</span>
-                            </div>
-                        </div>
-                        
-                        <div class="experience-title-section">
-                            <h2 class="experience-title">
-                                JMA <span class="gradient-text">Progettazione</span>
-                            </h2>
-                            <p class="experience-subtitle">
-                                Ufficio Progettazione e Design Tecnico
-                            </p>
+                            <span class="experience-grade">5° Superiore</span>
+                            <span class="experience-duration">Novembre - Dicembre 2024</span>
                         </div>
                     </div>
-                    
-                    <div class="experience-content">
-                        <div class="experience-media animate-slide-left">
-                            <div class="media-container">
-                                <img src="jma2.jpg" alt="JMA Progettazione" class="experience-image" />
-                                <div class="media-overlay">
-                                    <div class="media-info">
-                                        <h4>JMA Progettazione</h4>
-                                        <p>Ufficio tecnico e design</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="experience-stats">
-                                <div class="stat-item">
-                                    <i class="fas fa-clock"></i>
-                                    <div>
-                                        <strong>80 ore</strong>
-                                        <span>Durata totale</span>
-                                    </div>
-                                </div>
-                                <div class="stat-item">
-                                    <i class="fas fa-drafting-compass"></i>
-                                    <div>
-                                        <strong>CAD</strong>
-                                        <span>Software utilizzato</span>
-                                    </div>
-                                </div>
-                                <div class="stat-item">
-                                    <i class="fas fa-laptop"></i>
-                                    <div>
-                                        <strong>Ufficio</strong>
-                                        <span>Ambiente</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-description">
+                        <h3>Descrizione dell'Esperienza</h3>
+                        <p>Nel quinto anno, ho approfondito l'aspetto progettuale presso JMA, lavorando nell'area di progettazione degli edifici e simulazione dell'area di copertura delle antenne. Questa esperienza mi ha introdotto all'uso di software professionali e alla progettazione tecnica avanzata.</p>
                         
-                        <div class="experience-details animate-slide-right">
-                            <div class="detail-section">
-                                <h3>
+                        <h4>Attività Svolte</h4>
+                        <div class="activity-grid">
+                            <div class="activity-item">
+                                <div class="activity-icon">
                                     <i class="fas fa-building"></i>
-                                    Descrizione dell'azienda
-                                </h3>
-                                <p>Ritorno in JMA, questa volta nell'ufficio progettazione, dove ho potuto approfondire gli aspetti più tecnici e creativi della produzione industriale. Un'esperienza che ha completato il mio percorso formativo con competenze digitali e progettuali avanzate.</p>
-                            </div>
-                            
-                            <div class="detail-section">
-                                <h3>
-                                    <i class="fas fa-tasks"></i>
-                                    Attività svolte
-                                </h3>
-                                <div class="activities-grid">
-                                    <div class="activity-item">
-                                        <div class="activity-icon">
-                                            <i class="fas fa-drafting-compass"></i>
-                                        </div>
-                                        <div class="activity-content">
-                                            <h4>Supporto progettazione CAD</h4>
-                                            <p>Assistenza nella creazione di modelli 3D e disegni tecnici</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="activity-item">
-                                        <div class="activity-icon">
-                                            <i class="fas fa-file-alt"></i>
-                                        </div>
-                                        <div class="activity-content">
-                                            <h4>Analisi disegni tecnici</h4>
-                                            <p>Studio e interpretazione di specifiche tecniche complesse</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="activity-item">
-                                        <div class="activity-icon">
-                                            <i class="fas fa-cube"></i>
-                                        </div>
-                                        <div class="activity-content">
-                                            <h4>Simulazioni assemblaggio</h4>
-                                            <p>Test virtuali di montaggio e verifica della fattibilità</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="activity-item">
-                                        <div class="activity-icon">
-                                            <i class="fas fa-comments"></i>
-                                        </div>
-                                        <div class="activity-content">
-                                            <h4>Riunioni di progetto</h4>
-                                            <p>Partecipazione attiva alle sessioni di brainstorming</p>
-                                        </div>
-                                    </div>
+                                </div>
+                                <div class="activity-content">
+                                    <h5>Progettazione Edifici</h5>
+                                    <p>Partecipazione alla progettazione di edifici industriali, comprensione delle normative tecniche e sviluppo di soluzioni progettuali innovative.</p>
                                 </div>
                             </div>
-                            
-                            <div class="detail-section">
-                                <h3>
-                                    <i class="fas fa-graduation-cap"></i>
-                                    Competenze acquisite
-                                </h3>
-                                <div class="skills-container">
-                                    <div class="skill-item primary">
-                                        <i class="fas fa-drafting-compass"></i>
-                                        <span>CAD</span>
-                                    </div>
-                                    <div class="skill-item secondary">
-                                        <i class="fas fa-pencil-ruler"></i>
-                                        <span>Progettazione</span>
-                                    </div>
-                                    <div class="skill-item accent">
-                                        <i class="fas fa-puzzle-piece"></i>
-                                        <span>Problem Solving</span>
-                                    </div>
-                                    <div class="skill-item primary">
-                                        <i class="fas fa-laptop"></i>
-                                        <span>Lavoro d'ufficio</span>
-                                    </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-wifi"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <h5>Simulazione con IBWave</h5>
+                                    <p>Utilizzo del software IBWave per la simulazione dell'area di copertura delle antenne, analisi dei pattern di radiazione e ottimizzazione delle installazioni.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="experience-skills">
+                        <h4>Competenze Sviluppate</h4>
+                        <div class="skills-tags">
+                            <span class="skill-tag">IBWave</span>
+                            <span class="skill-tag">Progettazione RF</span>
+                            <span class="skill-tag">CAD</span>
+                            <span class="skill-tag">Simulazione tecnica</span>
+                            <span class="skill-tag">Analisi dati</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Sezione riepilogo del percorso -->
-        <section class="journey-summary">
-            <div class="container">
-                <div class="summary-header animate-fade-up">
-                    <h2 class="section-title">
-                        Il Mio <span class="gradient-text">Percorso</span> di Crescita
-                    </h2>
-                    <p class="section-subtitle">
-                        Tre anni di esperienze che hanno formato la mia identità professionale
-                    </p>
+    <!-- Timeline Summary -->
+    <section class="timeline-summary">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-route"></i>
+                Evoluzione del Percorso
+            </h2>
+            <div class="evolution-chart">
+                <div class="evolution-step">
+                    <div class="step-number">1</div>
+                    <h3>Introduzione</h3>
+                    <p>Prime esperienze aziendali e lavoro di gruppo</p>
                 </div>
-                
-                <div class="journey-timeline">
-                    <div class="timeline-item animate-slide-up">
-                        <div class="timeline-marker">
-                            <img src="icons/industry.png" alt="MAST" />
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Fondazione & Creatività</h3>
-                            <p>MAST mi ha introdotto al mondo industriale con un approccio creativo e innovativo</p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-connector"></div>
-                    
-                    <div class="timeline-item animate-slide-up">
-                        <div class="timeline-marker">
-                            <img src="icons/assembly.png" alt="JMA Assemblaggio" />
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Pratica & Precisione</h3>
-                            <p>JMA Assemblaggio mi ha insegnato l'importanza della precisione e del lavoro manuale</p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-connector"></div>
-                    
-                    <div class="timeline-item animate-slide-up">
-                        <div class="timeline-marker">
-                            <img src="icons/design.png" alt="JMA Progettazione" />
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Progettazione & Futuro</h3>
-                            <p>JMA Progettazione ha completato il mio percorso con competenze digitali avanzate</p>
-                        </div>
-                    </div>
+                <div class="evolution-arrow">
+                    <i class="fas fa-arrow-right"></i>
                 </div>
-                
-                <div class="journey-stats animate-fade-up">
-                    <div class="journey-stat">
-                        <div class="stat-icon">
-                            <i class="fas fa-calendar-alt"></i>
-                        </div>
-                        <div class="stat-content">
-                            <strong>3 Anni</strong>
-                            <span>di percorso formativo</span>
-                        </div>
-                    </div>
-                    
-                    <div class="journey-stat">
-                        <div class="stat-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="stat-content">
-                            <strong>240 Ore</strong>
-                            <span>di esperienza pratica</span>
-                        </div>
-                    </div>
-                    
-                    <div class="journey-stat">
-                        <div class="stat-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <div class="stat-content">
-                            <strong>3 Aziende</strong>
-                            <span>diverse esperienze</span>
-                        </div>
-                    </div>
-                    
-                    <div class="journey-stat">
-                        <div class="stat-icon">
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="stat-content">
-                            <strong>12+ Competenze</strong>
-                            <span>acquisite</span>
-                        </div>
-                    </div>
+                <div class="evolution-step">
+                    <div class="step-number">2</div>
+                    <h3>Pratica</h3>
+                    <p>Competenze tecniche operative e assemblaggio</p>
+                </div>
+                <div class="evolution-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="evolution-step">
+                    <div class="step-number">3</div>
+                    <h3>Progettazione</h3>
+                    <p>Software avanzati e simulazioni professionali</p>
                 </div>
             </div>
-        </section>
-
-        <!-- Call to Action -->
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-content animate-fade-up">
-                    <h2>Vuoi approfondire le mie competenze?</h2>
-                    <p>Scopri nel dettaglio tutte le abilità che ho sviluppato durante questo percorso</p>
-                    <div class="cta-buttons">
-                        <a href="competenze.html" class="btn btn-primary">
-                            <i class="fas fa-star"></i>
-                            <span>Vedi Competenze</span>
-                        </a>
-                        <a href="contatti.html" class="btn btn-outline">
-                            <i class="fas fa-envelope"></i>
-                            <span>Contattami</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
+        <div class="container">
             <div class="footer-content">
-                <div class="footer-section footer-brand">
-                    <div class="footer-logo">
-                        <img src="icons/logo.png" alt="Logo PCTO" />
-                        <span>PCTO<span class="logo-accent">Experience</span></span>
-                    </div>
-                    <p class="footer-description">
-                        Portfolio delle esperienze formative di Giambanco Vincenzo
-                    </p>
-                    <div class="social-links">
-                        <a href="https://github.com/Vinc-enz" target="_blank" rel="noopener" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:vincenzo.giambanco2006@gmail.com" class="social-link">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="tel:+393313340464" class="social-link">
-                            <i class="fas fa-phone"></i>
-                        </a>
-                    </div>
-                </div>
-
                 <div class="footer-section">
-                    <h3 class="footer-title">
-                        <i class="fas fa-sitemap"></i>
-                        Navigazione
-                    </h3>
-                    <ul class="footer-links">
-                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="esperienze.html"><i class="fas fa-briefcase"></i> Esperienze</a></li>
-                        <li><a href="competenze.html"><i class="fas fa-star"></i> Competenze</a></li>
-                        <li><a href="contatti.html"><i class="fas fa-envelope"></i> Contatti</a></li>
+                    <h3>Vincenzo Giambanco</h3>
+                    <p>Studente con passione per la tecnologia e l'innovazione</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Link Rapidi</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="esperienze.html">Esperienze</a></li>
+                        <li><a href="competenze.html">Competenze</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-section">
-                    <h3 class="footer-title">
-                        <i class="fas fa-address-card"></i>
-                        Contatti
-                    </h3>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+393313340464">+39 331 334 0464</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:vincenzo.giambanco2006@gmail.com">vincenzo.giambanco2006@gmail.com</a>
-                        </div>
-                    </div>
+                    <h4>Contatti</h4>
+                    <p><i class="fas fa-envelope"></i> vincenzo.giambanco2006@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +39 331 344 0464</p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/Vinc-enz" target="_blank">GitHub</a></p>
                 </div>
             </div>
-        </div>
-
-        <div class="footer-bottom">
-            <div class="footer-container">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2024 Giambanco Vincenzo. Tutti i diritti riservati.</p>
-                    <div class="footer-meta">
-                        <span>Made with <i class="fas fa-heart"></i> for PCTO</span>
-                    </div>
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vincenzo Giambanco. Tutti i diritti riservati.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Back to top button -->
-    <button class="back-to-top" id="backToTop" aria-label="Torna in alto">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
