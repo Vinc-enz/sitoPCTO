@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('load', function() {
         setTimeout(function() {
             pageLoader.classList.add('hidden');
-        }, 500);
+        }, 0);
     });
     
     // Mobile menu toggle
