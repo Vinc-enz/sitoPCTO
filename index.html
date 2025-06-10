@@ -3,417 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il Mio Percorso PCTO | Giambanco Vincenzo</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Vincenzo Giambanco - Percorso PCTO</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <meta name="description" content="Portfolio PCTO di Giambanco Vincenzo - Percorsi per le Competenze Trasversali e l'Orientamento">
-    <meta name="keywords" content="PCTO, portfolio, competenze, esperienze, formazione">
-    <meta name="author" content="Giambanco Vincenzo">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">
-                <span class="logo-icon">
-                    <img src="icons/logo.png" alt="Logo PCTO" />
-                </span>
-                PCTO<span class="logo-accent">Experience</span>
-            </a>
-            
-            <ul class="nav-menu" id="navMenu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link active">
-                        <i class="fas fa-home"></i>
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="esperienze.html" class="nav-link">
-                        <i class="fas fa-briefcase"></i>
-                        <span>Esperienze</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="competenze.html" class="nav-link">
-                        <i class="fas fa-star"></i>
-                        <span>Competenze</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="contatti.html" class="nav-link">
-                        <i class="fas fa-envelope"></i>
-                        <span>Contatti</span>
-                    </a>
-                </li>
-            </ul>
-            
-            <div class="hamburger" id="hamburger" aria-label="Menu di navigazione">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-brand">
+                <i class="fas fa-graduation-cap brand-icon"></i>
+                <span>Vincenzo Giambanco</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="esperienze.html" class="nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Esperienze</span>
+                </a>
+                <a href="competenze.html" class="nav-link">
+                    <i class="fas fa-cogs"></i>
+                    <span>Competenze</span>
+                </a>
+                <a href="contatti.html" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contatti</span>
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
-    <header class="hero" id="heroSection">
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="hero-background">
             <div class="hero-particles"></div>
-            <div class="hero-gradient"></div>
         </div>
-        
         <div class="hero-content">
-            <div class="hero-text animate-fade-up">
+            <div class="hero-text">
                 <h1 class="hero-title">
-                    Il Mio Percorso 
-                    <span class="gradient-text">PCTO</span>
+                    <span class="title-line">Il Mio</span>
+                    <span class="title-line highlight">Percorso PCTO</span>
                 </h1>
                 <p class="hero-subtitle">
-                    Dalla teoria alla pratica: un viaggio attraverso le mie 
-                    <span class="highlight-text">esperienze formative</span>
+                    Tre anni di crescita professionale attraverso esperienze formative 
+                    presso MAST Bologna e JMA Castel San Pietro Terme
                 </p>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">3</span>
-                        <span class="stat-label">Anni</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-item">
-                        <span class="stat-number">240</span>
-                        <span class="stat-label">Ore</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-item">
-                        <span class="stat-number">3</span>
-                        <span class="stat-label">Aziende</span>
-                    </div>
+                <div class="hero-buttons">
+                    <a href="esperienze.html" class="btn btn-primary">
+                        <i class="fas fa-arrow-right"></i>
+                        Scopri le Esperienze
+                    </a>
+                    <a href="contatti.html" class="btn btn-secondary">
+                        <i class="fas fa-user"></i>
+                        Contattami
+                    </a>
                 </div>
             </div>
-            
-            <div class="hero-actions animate-fade-up">
-                <a href="esperienze.html" class="btn btn-primary">
-                    <span>Scopri le Esperienze</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                <a href="competenze.html" class="btn btn-secondary">
-                    <span>Vedi Competenze</span>
-                    <i class="fas fa-star"></i>
-                </a>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <i class="fas fa-code"></i>
+                    <span>Programmazione</span>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-tools"></i>
+                    <span>Assemblaggio</span>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-drafting-compass"></i>
+                    <span>Progettazione</span>
+                </div>
             </div>
         </div>
-        
-        <div class="scroll-indicator">
-            <div class="scroll-mouse">
-                <div class="scroll-wheel"></div>
-            </div>
-            <span class="scroll-text">Scorri per esplorare</span>
-        </div>
-    </header>
+    </section>
 
-    <main>
-        <section class="intro-section" id="introSection">
-            <div class="container">
-                <div class="section-header animate-slide-up">
-                    <h2 class="section-title">
-                        Benvenuto nel mio 
-                        <span class="gradient-text">Portfolio PCTO</span>
-                    </h2>
-                    <div class="section-subtitle">
-                        <p>Questo sito documenta il mio percorso di <strong>Percorsi per le Competenze Trasversali e l'Orientamento</strong> dal terzo al quinto anno presso l'istituto superiore.</p>
+    <!-- Timeline Overview -->
+    <section class="timeline-overview">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-clock"></i>
+                Panoramica del Percorso
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item" data-year="2022-2023">
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3>Terzo Anno - MAST Bologna</h3>
+                        <p>Visita guidata aziendale e progetto di re-design di prodotto in team</p>
+                        <span class="timeline-year">3° Superiore</span>
                     </div>
                 </div>
-                
-                <div class="intro-content animate-slide-up">
-                    <div class="intro-text">
-                        <p>Attraverso diverse esperienze in aziende del territorio, ho potuto sviluppare competenze tecniche e trasversali fondamentali per il mio futuro professionale.</p>
-                        
-                        <div class="intro-highlights">
-                            <div class="highlight-item">
-                                <div class="highlight-icon">
-                                    <img src="icons/growth.png" alt="Crescita" />
-                                </div>
-                                <div class="highlight-text">
-                                    <h4>Crescita Professionale</h4>
-                                    <p>Sviluppo di competenze tecniche specifiche</p>
-                                </div>
-                            </div>
-                            
-                            <div class="highlight-item">
-                                <div class="highlight-icon">
-                                    <img src="icons/teamwork.png" alt="Collaborazione" />
-                                </div>
-                                <div class="highlight-text">
-                                    <h4>Soft Skills</h4>
-                                    <p>Miglioramento delle competenze trasversali</p>
-                                </div>
-                            </div>
-                            
-                            <div class="highlight-item">
-                                <div class="highlight-icon">
-                                    <img src="icons/innovation.png" alt="Innovazione" />
-                                </div>
-                                <div class="highlight-text">
-                                    <h4>Orientamento Futuro</h4>
-                                    <p>Chiarezza sugli obiettivi professionali</p>
-                                </div>
-                            </div>
+                <div class="timeline-item" data-year="2023-2024">
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-wrench"></i>
                         </div>
+                        <h3>Quarto Anno - JMA Assemblaggio</h3>
+                        <p>Un mese di esperienza pratica nell'assemblaggio componenti (Maggio-Giugno)</p>
+                        <span class="timeline-year">4° Superiore</span>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2024-2025">
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-blueprint"></i>
+                        </div>
+                        <h3>Quinto Anno - JMA Progettazione</h3>
+                        <p>Progettazione edifici e simulazione copertura antenne con IBWave (Novembre-Dicembre)</p>
+                        <span class="timeline-year">5° Superiore</span>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="experiences-section" id="experiencesSection">
-            <div class="container">
-                <div class="section-header animate-slide-up">
-                    <h2 class="section-title">
-                        Le Mie <span class="gradient-text">Esperienze</span>
-                    </h2>
-                    <p class="section-subtitle">Un percorso di crescita attraverso tre anni formativi</p>
+        </div>
+    </section>
+
+    <!-- Skills Preview -->
+    <section class="skills-preview">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-star"></i>
+                Competenze Acquisite
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Project Management</h3>
+                    <p>Gestione progetti in team e presentazione risultati</p>
                 </div>
-                
-                <div class="experiences-timeline">
-                    <div class="experience-card animate-zoom-in" data-year="2019-2020">
-                        <div class="card-header">
-                            <div class="card-icon">
-                                <img src="icons/industry.png" alt="Icona industria" />
-                            </div>
-                            <div class="card-badge">Terzo Anno</div>
-                        </div>
-                        
-                        <div class="card-content">
-                            <h3 class="card-title">MAST Bologna</h3>
-                            <p class="card-subtitle">Fondazione per l'arte e la creatività industriale</p>
-                            
-                            <div class="card-details">
-                                <div class="detail-item">
-                                    <i class="fas fa-calendar"></i>
-                                    <span>2019-2020</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-clock"></i>
-                                    <span>80 ore</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Bologna</span>
-                                </div>
-                            </div>
-                            
-                            <div class="skills-preview">
-                                <span class="skill-tag">Osservazione</span>
-                                <span class="skill-tag">Creatività</span>
-                                <span class="skill-tag">Teamwork</span>
-                            </div>
-                        </div>
-                        
-                        <div class="card-footer">
-                            <a href="esperienze.html#terzo" class="btn-card">
-                                <span>Scopri di più</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-microchip"></i>
                     </div>
-                    <div class="experience-card animate-zoom-in" data-year="2020-2021">
-                        <div class="card-header">
-                            <div class="card-icon">
-                                <img src="icons/assembly.png" alt="Icona assemblaggio" />
-                            </div>
-                            <div class="card-badge">Quarto Anno</div>
-                        </div>
-                        
-                        <div class="card-content">
-                            <h3 class="card-title">JMA Assemblaggio</h3>
-                            <p class="card-subtitle">Reparto Assemblaggio Meccanico</p>
-                            
-                            <div class="card-details">
-                                <div class="detail-item">
-                                    <i class="fas fa-calendar"></i>
-                                    <span>2020-2021</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-clock"></i>
-                                    <span>80 ore</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-cogs"></i>
-                                    <span>Produzione</span>
-                                </div>
-                            </div>
-                            
-                            <div class="skills-preview">
-                                <span class="skill-tag">Precisione</span>
-                                <span class="skill-tag">Manualità</span>
-                                <span class="skill-tag">Sicurezza</span>
-                            </div>
-                        </div>
-                        
-                        <div class="card-footer">
-                            <a href="esperienze.html#quarto" class="btn-card">
-                                <span>Scopri di più</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
+                    <h3>Assemblaggio Hardware</h3>
+                    <p>Esperienza pratica nell'assemblaggio di componenti elettronici</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-wifi"></i>
                     </div>
-                    <div class="experience-card animate-zoom-in" data-year="2021-2022">
-                        <div class="card-header">
-                            <div class="card-icon">
-                                <img src="icons/design.png" alt="Icona progettazione" />
-                            </div>
-                            <div class="card-badge">Quinto Anno</div>
-                        </div>
-                        
-                        <div class="card-content">
-                            <h3 class="card-title">JMA Progettazione</h3>
-                            <p class="card-subtitle">Ufficio Progettazione e Design</p>
-                            
-                            <div class="card-details">
-                                <div class="detail-item">
-                                    <i class="fas fa-calendar"></i>
-                                    <span>2021-2022</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-clock"></i>
-                                    <span>80 ore</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-drafting-compass"></i>
-                                    <span>CAD</span>
-                                </div>
-                            </div>
-                            
-                            <div class="skills-preview">
-                                <span class="skill-tag">CAD</span>
-                                <span class="skill-tag">Problem Solving</span>
-                                <span class="skill-tag">Progettazione</span>
-                            </div>
-                        </div>
-                        
-                        <div class="card-footer">
-                            <a href="esperienze.html#quinto" class="btn-card">
-                                <span>Scopri di più</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
+                    <h3>Progettazione RF</h3>
+                    <p>Simulazione copertura antenne e progettazione edifici</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-laptop-code"></i>
                     </div>
+                    <h3>Software Specializzati</h3>
+                    <p>Utilizzo di IBWave per simulazioni professionali</p>
                 </div>
             </div>
-        </section>
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-content animate-fade-up">
-                    <h2>Vuoi saperne di più?</h2>
-                    <p>Esplora le mie competenze o mettiti in contatto per maggiori informazioni</p>
-                    <div class="cta-buttons">
-                        <a href="competenze.html" class="btn btn-primary">
-                            <i class="fas fa-star"></i>
-                            <span>Vedi Competenze</span>
-                        </a>
-                        <a href="contatti.html" class="btn btn-outline">
-                            <i class="fas fa-envelope"></i>
-                            <span>Contattami</span>
-                        </a>
-                    </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Interessato al mio percorso?</h2>
+                <p>Scopri nel dettaglio le mie esperienze e competenze acquisite durante il PCTO</p>
+                <div class="cta-buttons">
+                    <a href="esperienze.html" class="btn btn-primary">
+                        <i class="fas fa-eye"></i>
+                        Vedi Esperienze
+                    </a>
+                    <a href="competenze.html" class="btn btn-outline">
+                        <i class="fas fa-list"></i>
+                        Competenze
+                    </a>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
+        <div class="container">
             <div class="footer-content">
-                <div class="footer-section footer-brand">
-                    <div class="footer-logo">
-                        <img src="icons/logo.png" alt="Logo PCTO" />
-                        <span>PCTO<span class="logo-accent">Experience</span></span>
-                    </div>
-                    <p class="footer-description">
-                        Portfolio delle esperienze formative di Giambanco Vincenzo - 
-                        Percorsi per le Competenze Trasversali e l'Orientamento
-                    </p>
-                    <div class="social-links">
-                        <a href="https://github.com/Vinc-enz" target="_blank" rel="noopener" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:vincenzo.giambanco2006@gmail.com" class="social-link">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="tel:+393313340464" class="social-link">
-                            <i class="fas fa-phone"></i>
-                        </a>
-                    </div>
-                </div>
-
                 <div class="footer-section">
-                    <h3 class="footer-title">
-                        <i class="fas fa-sitemap"></i>
-                        Navigazione
-                    </h3>
-                    <ul class="footer-links">
-                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="esperienze.html"><i class="fas fa-briefcase"></i> Esperienze</a></li>
-                        <li><a href="competenze.html"><i class="fas fa-star"></i> Competenze</a></li>
-                        <li><a href="contatti.html"><i class="fas fa-envelope"></i> Contatti</a></li>
+                    <h3>Vincenzo Giambanco</h3>
+                    <p>Studente con passione per la tecnologia e l'innovazione</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Link Rapidi</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="esperienze.html">Esperienze</a></li>
+                        <li><a href="competenze.html">Competenze</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-section">
-                    <h3 class="footer-title">
-                        <i class="fas fa-address-card"></i>
-                        Contatti
-                    </h3>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+393313340464">+39 331 334 0464</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:vincenzo.giambanco2006@gmail.com">vincenzo.giambanco2006@gmail.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <a href="https://github.com/Vinc-enz" target="_blank" rel="noopener">GitHub Profile</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer-section">
-                    <h3 class="footer-title">
-                        <i class="fas fa-graduation-cap"></i>
-                        PCTO Info
-                    </h3>
-                    <div class="pcto-stats">
-                        <div class="pcto-stat">
-                            <span class="stat-value">3</span>
-                            <span class="stat-label">Anni di esperienza</span>
-                        </div>
-                        <div class="pcto-stat">
-                            <span class="stat-value">240</span>
-                            <span class="stat-label">Ore totali</span>
-                        </div>
-                        <div class="pcto-stat">
-                            <span class="stat-value">3</span>
-                            <span class="stat-label">Aziende partner</span>
-                        </div>
-                    </div>
+                    <h4>Contatti</h4>
+                    <p><i class="fas fa-envelope"></i> vincenzo.giambanco2006@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +39 331 344 0464</p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/Vinc-enz" target="_blank">GitHub</a></p>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="footer-container">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2024 Giambanco Vincenzo. Tutti i diritti riservati.</p>
-                    <div class="footer-meta">
-                        <span>Made with <i class="fas fa-heart"></i> for PCTO</span>
-                    </div>
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vincenzo Giambanco. Tutti i diritti riservati.</p>
             </div>
         </div>
     </footer>
-    <button class="back-to-top" id="backToTop" aria-label="Torna in alto">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+
     <script src="script.js"></script>
 </body>
 </html>
