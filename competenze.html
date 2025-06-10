@@ -3,589 +3,452 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Competenze PCTO | Giambanco Vincenzo</title>
+    <title>Competenze - Vincenzo Giambanco</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">
-                <span class="logo-text">PCTO</span>
-                <span class="logo-accent">Experience</span>
-            </a>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">
-                    <i class="fas fa-home nav-icon"></i>
+            <div class="nav-brand">
+                <i class="fas fa-graduation-cap brand-icon"></i>
+                <span>Vincenzo Giambanco</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
                     <span>Home</span>
-                </a></li>
-                <li><a href="esperienze.html" class="nav-link">
-                    <i class="fas fa-briefcase nav-icon"></i>
+                </a>
+                <a href="esperienze.html" class="nav-link">
+                    <i class="fas fa-briefcase"></i>
                     <span>Esperienze</span>
-                </a></li>
-                <li><a href="competenze.html" class="nav-link active">
-                    <i class="fas fa-cogs nav-icon"></i>
+                </a>
+                <a href="competenze.html" class="nav-link active">
+                    <i class="fas fa-cogs"></i>
                     <span>Competenze</span>
-                </a></li>
-                <li><a href="contatti.html" class="nav-link">
-                    <i class="fas fa-envelope nav-icon"></i>
+                </a>
+                <a href="contatti.html" class="nav-link">
+                    <i class="fas fa-envelope"></i>
                     <span>Contatti</span>
-                </a></li>
-            </ul>
-            <button class="hamburger" aria-label="Menu">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero-section skills-hero">
-        <div class="hero-background">
-            <div class="floating-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-                <div class="shape shape-4"></div>
-                <div class="shape shape-5"></div>
-            </div>
-            <div class="hero-particles">
-                <div class="particle particle-1"></div>
-                <div class="particle particle-2"></div>
-                <div class="particle particle-3"></div>
-                <div class="particle particle-4"></div>
-                <div class="particle particle-5"></div>
-                <div class="particle particle-6"></div>
-            </div>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">
+                <i class="fas fa-cogs"></i>
+                Le Mie Competenze
+            </h1>
+            <p class="page-subtitle">Skills tecniche e trasversali acquisite durante il percorso PCTO</p>
         </div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <div class="hero-badge">
-                    <i class="fas fa-award"></i>
-                    <span>Portfolio delle Competenze</span>
-                </div>
-                <h1 class="hero-title">
-                    <span class="title-line">Competenze</span>
-                    <span class="title-line gradient-text">Acquisite</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Un viaggio di crescita professionale attraverso il percorso PCTO.
-                    <br>Scopri le competenze tecniche e trasversali che ho sviluppato durante questa esperienza formativa.
-                </p>
-            </div>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <div class="stat-number">8+</div>
-                    <div class="stat-label">Competenze Tecniche</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">4+</div>
-                    <div class="stat-label">Soft Skills</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Crescita Personale</div>
-                </div>
-            </div>
-        </div>
-    </header>
+    </section>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <!-- Technical Skills Section -->
-        <section class="skills-section" id="technical-skills">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">
+    <!-- Skills Overview -->
+    <section class="skills-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">Aziende</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Anni di PCTO</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
                         <i class="fas fa-tools"></i>
-                        <span>Hard Skills</span>
                     </div>
-                    <h2 class="section-title">Competenze Tecniche</h2>
-                    <p class="section-subtitle">
-                        Abilità specifiche del settore meccanico e industriale acquisite durante il percorso PCTO
-                    </p>
+                    <div class="stat-content">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Competenze</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Progetti</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="technical-skills">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-laptop-code"></i>
+                Competenze Tecniche
+            </h2>
+            <div class="skills-categories">
+                <!-- Software and Tools -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-desktop"></i> Software e Strumenti</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">IBWave</span>
+                                <span class="skill-level">Avanzato</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CAD Design</span>
+                                <span class="skill-level">Intermedio</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Simulazione RF</span>
+                                <span class="skill-level">Avanzato</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Microsoft Office</span>
+                                <span class="skill-level">Esperto</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hardware Skills -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-microchip"></i> Competenze Hardware</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Assemblaggio Componenti</span>
+                                <span class="skill-level">Avanzato</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Controllo Qualità</span>
+                                <span class="skill-level">Intermedio</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Strumentazione Tecnica</span>
+                                <span class="skill-level">Intermedio</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Troubleshooting</span>
+                                <span class="skill-level">Avanzato</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design & Planning -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-drafting-compass"></i> Progettazione</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Progettazione Edifici</span>
+                                <span class="skill-level">Intermedio</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Design Thinking</span>
+                                <span class="skill-level">Avanzato</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Re-design Prodotti</span>
+                                <span class="skill-level">Avanzato</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Analisi Tecnica</span>
+                                <span class="skill-level">Intermedio</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 78%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soft Skills -->
+    <section class="soft-skills">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-users"></i>
+                Competenze Trasversali
+            </h2>
+            <div class="soft-skills-grid">
+                <div class="soft-skill-card">
+                    <div class="soft-skill-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Lavoro di Squadra</h3>
+                    <p>Capacità di collaborare efficacemente in team multidisciplinari, sviluppata attraverso progetti di gruppo e attività collaborative.</p>
+                    <div class="skill-progress-circle" data-percentage="90">
+                        <svg viewBox="0 0 36 36">
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#eee" stroke-width="2"/>
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#4f46e5" stroke-width="2" stroke-dasharray="90, 100" stroke-linecap="round"/>
+                        </svg>
+                        <div class="percentage">90%</div>
+                    </div>
                 </div>
                 
-                <div class="skills-grid">
-                    <div class="skill-card tech-skill">
-                        <div class="skill-icon">
-                            <i class="fas fa-drafting-compass"></i>
-                        </div>
-                        <div class="skill-content">
-                            <h3 class="skill-title">Progettazione CAD</h3>
-                            <p class="skill-description">
-                                Utilizzo avanzato di software CAD per la creazione di modelli 3D, 
-                                disegni tecnici e simulazioni meccaniche
-                            </p>
-                            <div class="skill-tags">
-                                <span class="skill-tag">AutoCAD</span>
-                                <span class="skill-tag">SolidWorks</span>
-                                <span class="skill-tag">Modeling 3D</span>
-                            </div>
-                        </div>
-                        <div class="skill-level">
-                            <div class="level-info">
-                                <span class="level-label">Livello di competenza</span>
-                                <span class="level-percentage">75%</span>
-                            </div>
-                            <div class="level-bar-container">
-                                <div class="level-bar" data-level="75"></div>
-                            </div>
-                        </div>
+                <div class="soft-skill-card">
+                    <div class="soft-skill-icon">
+                        <i class="fas fa-presentation"></i>
                     </div>
-                    
-                    <div class="skill-card tech-skill">
-                        <div class="skill-icon">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <div class="skill-content">
-                            <h3 class="skill-title">Assemblaggio Meccanico</h3>
-                            <p class="skill-description">
-                                Montaggio preciso di componenti meccanici seguendo specifiche tecniche 
-                                e procedure di sicurezza industriale
-                            </p>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Assemblaggio</span>
-                                <span class="skill-tag">Meccanica</span>
-                                <span class="skill-tag">Precisione</span>
-                            </div>
-                        </div>
-                        <div class="skill-level">
-                            <div class="level-info">
-                                <span class="level-label">Livello di competenza</span>
-                                <span class="level-percentage">85%</span>
-                            </div>
-                            <div class="level-bar-container">
-                                <div class="level-bar" data-level="85"></div>
-                            </div>
-                        </div>
+                    <h3>Comunicazione</h3>
+                    <p>Abilità nel presentare progetti e idee in modo chiaro ed efficace, acquisita attraverso presentazioni aziendali.</p>
+                    <div class="skill-progress-circle" data-percentage="85">
+                        <svg viewBox="0 0 36 36">
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#eee" stroke-width="2"/>
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#06d6a0" stroke-width="2" stroke-dasharray="85, 100" stroke-linecap="round"/>
+                        </svg>
+                        <div class="percentage">85%</div>
                     </div>
-                    
-                    <div class="skill-card tech-skill">
-                        <div class="skill-icon">
-                            <i class="fas fa-ruler-combined"></i>
-                        </div>
-                        <div class="skill-content">
-                            <h3 class="skill-title">Misurazioni di Precisione</h3>
-                            <p class="skill-description">
-                                Utilizzo professionale di strumenti di misurazione di precisione 
-                                per controllo dimensionale e tolleranze
-                            </p>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Calibri</span>
-                                <span class="skill-tag">Micrometri</span>
-                                <span class="skill-tag">Tolleranze</span>
-                            </div>
-                        </div>
-                        <div class="skill-level">
-                            <div class="level-info">
-                                <span class="level-label">Livello di competenza</span>
-                                <span class="level-percentage">80%</span>
-                            </div>
-                            <div class="level-bar-container">
-                                <div class="level-bar" data-level="80"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-card tech-skill">
-                        <div class="skill-icon">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <div class="skill-content">
-                            <h3 class="skill-title">Controllo Qualità</h3>
-                            <p class="skill-description">
-                                Verifica sistematica della conformità dei prodotti agli standard 
-                                industriali e alle specifiche tecniche
-                            </p>
-                            <div class="skill-tags">
-                                <span class="skill-tag">ISO Standards</span>
-                                <span class="skill-tag">Testing</span>
-                                <span class="skill-tag">Conformità</span>
-                            </div>
-                        </div>
-                        <div class="skill-level">
-                            <div class="level-info">
-                                <span class="level-label">Livello di competenza</span>
-                                <span class="level-percentage">70%</span>
-                            </div>
-                            <div class="level-bar-container">
-                                <div class="level-bar" data-level="70"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Soft Skills Section -->
-        <section class="skills-section soft-skills-section" id="soft-skills">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">
-                        <i class="fas fa-users"></i>
-                        <span>Soft Skills</span>
-                    </div>
-                    <h2 class="section-title">Competenze Trasversali</h2>
-                    <p class="section-subtitle">
-                        Abilità interpersonali e comportamentali sviluppate nell'ambiente lavorativo
-                    </p>
                 </div>
                 
-                <div class="skills-grid">
-                    <div class="skill-card soft-skill">
-                        <div class="skill-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div class="skill-content">
-                            <h3 class="skill-title">Teamwork & Collaborazione</h3>
-                            <p class="skill-description">
-                                Capacità di lavorare efficacemente in team multidisciplinari, 
-                                condividendo conoscenze e supportando i colleghi
-                            </p>
-                            <div class="skill-benefits">
-                                <div class="benefit-item">
-                                    <i class="fas fa-check"></i>
-                                    <span>Comunicazione inter-team</span>
-                                </div>
-                                <div class="benefit-item">
-                                    <i class="fas fa-check"></i>
-                                    <span>Supporto reciproco</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-level">
-                            <div class="level-info">
-                                <span class="level-label">Livello di competenza</span>
-                                <span class="level-percentage">90%</span>
-                            </div>
-                            <div class="level-bar-container">
-                                <div class="level-bar" data-level="90"></div>
-                            </div>
-                        </div>
+                <div class="soft-skill-card">
+                    <div class="soft-skill-icon">
+                        <i class="fas fa-lightbulb"></i>
                     </div>
-                    
-                    <div class="skill-card soft-skill">
-                        <div class="skill-icon">
-                            <i class="fas fa-comments"></i>
-                        </div>
-                        <div class="skill-content">
-                            <h3 class="skill-title">Comunicazione Efficace</h3>
-                            <p class="skill-description">
-                                Abilità nel comunicare chiaramente con colleghi, superiori e clienti, 
-                                adattando il linguaggio al contesto
-                            </p>
-                            <div class="skill-benefits">
-                                <div class="benefit-item">
-                                    <i class="fas fa-check"></i>
-                                    <span>Comunicazione verbale</span>
-                                </div>
-                                <div class="benefit-item">
-                                    <i class="fas fa-check"></i>
-                                    <span>Ascolto attivo</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-level">
-                            <div class="level-info">
-                                <span class="level-label">Livello di competenza</span>
-                                <span class="level-percentage">85%</span>
-                            </div>
-                            <div class="level-bar-container">
-                                <div class="level-bar" data-level="85"></div>
-                            </div>
-                        </div>
+                    <h3>Problem Solving</h3>
+                    <p>Capacità di analizzare problemi complessi e sviluppare soluzioni innovative, rafforzata attraverso sfide tecniche reali.</p>
+                    <div class="skill-progress-circle" data-percentage="88">
+                        <svg viewBox="0 0 36 36">
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#eee" stroke-width="2"/>
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="88, 100" stroke-linecap="round"/>
+                        </svg>
+                        <div class="percentage">88%</div>
                     </div>
-                    
-                    <div class="skill-card soft-skill">
-                        <div class="skill-icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <div class="skill-content">
-                            <h3 class="skill-title">Problem Solving</h3>
-                            <p class="skill-description">
-                                Capacità di analizzare problemi complessi e sviluppare soluzioni 
-                                creative ed efficaci in contesti tecnici e organizzativi
-                            </p>
-                            <div class="skill-benefits">
-                                <div class="benefit-item">
-                                    <i class="fas fa-check"></i>
-                                    <span>Analisi critica</span>
-                                </div>
-                                <div class="benefit-item">
-                                    <i class="fas fa-check"></i>
-                                    <span>Soluzioni innovative</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-level">
-                            <div class="level-info">
-                                <span class="level-label">Livello di competenza</span>
-                                <span class="level-percentage">80%</span>
-                            </div>
-                            <div class="level-bar-container">
-                                <div class="level-bar" data-level="80"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-card soft-skill">
-                        <div class="skill-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="skill-content">
-                            <h3 class="skill-title">Gestione del Tempo</h3>
-                            <p class="skill-description">
-                                Organizzazione efficace del lavoro per rispettare scadenze, 
-                                gestire priorità multiple e ottimizzare la produttività
-                            </p>
-                            <div class="skill-benefits">
-                                <div class="benefit-item">
-                                    <i class="fas fa-check"></i>
-                                    <span>Pianificazione strategica</span>
-                                </div>
-                                <div class="benefit-item">
-                                    <i class="fas fa-check"></i>
-                                    <span>Rispetto delle scadenze</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-level">
-                            <div class="level-info">
-                                <span class="level-label">Livello di competenza</span>
-                                <span class="level-percentage">75%</span>
-                            </div>
-                            <div class="level-bar-container">
-                                <div class="level-bar" data-level="75"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Comparison Section -->
-        <section class="comparison-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Progresso delle Competenze</h2>
-                    <p class="section-subtitle">Evoluzione delle mie competenze durante il percorso PCTO</p>
                 </div>
                 
-                <div class="comparison-chart">
-                    <div class="chart-header">
-                        <h3>Crescita nel Tempo</h3>
-                        <div class="chart-legend">
-                            <div class="legend-item">
-                                <div class="legend-color tech"></div>
-                                <span>Competenze Tecniche</span>
-                            </div>
-                            <div class="legend-item">
-                                <div class="legend-color soft"></div>
-                                <span>Competenze Trasversali</span>
-                            </div>
-                        </div>
+                <div class="soft-skill-card">
+                    <div class="soft-skill-icon">
+                        <i class="fas fa-clock"></i>
                     </div>
-                    
-                    <div class="progress-timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-point"></div>
-                            <div class="timeline-content">
-                                <h4>Inizio Percorso</h4>
-                                <p>Conoscenze teoriche di base</p>
-                                <div class="progress-bars">
-                                    <div class="progress-bar tech" data-progress="20"></div>
-                                    <div class="progress-bar soft" data-progress="30"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-point"></div>
-                            <div class="timeline-content">
-                                <h4>Metà Percorso</h4>
-                                <p>Prime applicazioni pratiche</p>
-                                <div class="progress-bars">
-                                    <div class="progress-bar tech" data-progress="60"></div>
-                                    <div class="progress-bar soft" data-progress="65"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-point"></div>
-                            <div class="timeline-content">
-                                <h4>Fine Percorso</h4>
-                                <p>Competenze consolidate</p>
-                                <div class="progress-bars">
-                                    <div class="progress-bar tech" data-progress="78"></div>
-                                    <div class="progress-bar soft" data-progress="83"></div>
-                                </div>
-                            </div>
-                        </div>
+                    <h3>Gestione del Tempo</h3>
+                    <p>Abilità nell'organizzare e gestire efficacemente il tempo, rispettando scadenze e priorità in contesti professionali.</p>
+                    <div class="skill-progress-circle" data-percentage="82">
+                        <svg viewBox="0 0 36 36">
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#eee" stroke-width="2"/>
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="82, 100" stroke-linecap="round"/>
+                        </svg>
+                        <div class="percentage">82%</div>
+                    </div>
+                </div>
+                
+                <div class="soft-skill-card">
+                    <div class="soft-skill-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Adattabilità</h3>
+                    <p>Flessibilità nel adattarsi a nuovi ambienti di lavoro e tecnologie, dimostrata attraverso diverse esperienze aziendali.</p>
+                    <div class="skill-progress-circle" data-percentage="92">
+                        <svg viewBox="0 0 36 36">
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#eee" stroke-width="2"/>
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="92, 100" stroke-linecap="round"/>
+                        </svg>
+                        <div class="percentage">92%</div>
+                    </div>
+                </div>
+                
+                <div class="soft-skill-card">
+                    <div class="soft-skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Pensiero Critico</h3>
+                    <p>Capacità di analizzare situazioni complesse e valutare soluzioni alternative in modo obiettivo e razionale.</p>
+                    <div class="skill-progress-circle" data-percentage="86">
+                        <svg viewBox="0 0 36 36">
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#eee" stroke-width="2"/>
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#14b8a6" stroke-width="2" stroke-dasharray="86, 100" stroke-linecap="round"/>
+                        </svg>
+                        <div class="percentage">86%</div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Personal Reflection Section -->
-        <section class="reflection-section">
-            <div class="container">
-                <div class="reflection-content">
-                    <div class="reflection-header">
-                        <div class="reflection-icon">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <h2 class="reflection-title">Riflessioni Personali</h2>
-                        <p class="reflection-subtitle">Il mio percorso di crescita attraverso l'esperienza PCTO</p>
+    <!-- Certifications -->
+    <section class="certifications">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-certificate"></i>
+                Certificazioni e Riconoscimenti
+            </h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-award"></i>
                     </div>
-                    
-                    <div class="reflection-grid">
-                        <div class="reflection-card">
-                            <div class="card-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <h3>Apprendimento Pratico</h3>
-                            <p>
-                                Il percorso PCTO mi ha permesso di mettere in pratica le conoscenze teoriche 
-                                acquisite a scuola, sviluppando competenze tecniche specifiche del settore 
-                                meccanico attraverso l'esperienza diretta in ambiente lavorativo.
-                            </p>
-                        </div>
-                        
-                        <div class="reflection-card">
-                            <div class="card-icon">
-                                <i class="fas fa-handshake"></i>
-                            </div>
-                            <h3>Ambiente Professionale</h3>
-                            <p>
-                                L'esperienza in azienda mi ha fatto comprendere l'importanza del lavoro 
-                                di squadra, della precisione e della responsabilità in un contesto 
-                                professionale, valori fondamentali per il successo lavorativo.
-                            </p>
-                        </div>
-                        
-                        <div class="reflection-card">
-                            <div class="card-icon">
-                                <i class="fas fa-compass"></i>
-                            </div>
-                            <h3>Orientamento Futuro</h3>
-                            <p>
-                                Questo percorso ha contribuito significativamente a chiarire le mie 
-                                aspirazioni professionali e mi ha fornito una base solida e concreta 
-                                per il mio futuro ingresso nel mondo del lavoro.
-                            </p>
-                        </div>
+                    <h3>Certificato PCTO MAST</h3>
+                    <p>Completamento del percorso formativo presso MAST Bologna con valutazione eccellente</p>
+                    <span class="cert-year">2023</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-tools"></i>
                     </div>
-                    
-                    <div class="reflection-quote">
-                        <blockquote>
-                            "L'esperienza PCTO non è stata solo un'opportunità di apprendimento, 
-                            ma un vero e proprio ponte tra il mondo accademico e quello professionale, 
-                            che mi ha permesso di crescere sia come studente che come persona."
-                        </blockquote>
-                        <cite>— Giambanco Vincenzo</cite>
+                    <h3>Competenze Assemblaggio JMA</h3>
+                    <p>Certificazione delle competenze acquisite nell'assemblaggio di componenti elettronici</p>
+                    <span class="cert-year">2024</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-wifi"></i>
                     </div>
+                    <h3>IBWave Specialist</h3>
+                    <p>Competenze avanzate nell'utilizzo del software IBWave per simulazioni RF</p>
+                    <span class="cert-year">2024</span>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- CTA Section -->
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-content">
-                    <h2 class="cta-title">Interessato alle Mie Competenze?</h2>
-                    <p class="cta-subtitle">
-                        Scopri di più sul mio percorso formativo e le esperienze che hanno 
-                        contribuito a sviluppare queste competenze.
-                    </p>
-                    <div class="cta-buttons">
-                        <a href="esperienze.html" class="cta-btn primary">
-                            <i class="fas fa-briefcase"></i>
-                            <span>Vedi le Esperienze</span>
-                        </a>
-                        <a href="contatti.html" class="cta-btn secondary">
-                            <i class="fas fa-envelope"></i>
-                            <span>Contattami</span>
-                        </a>
+    <!-- Skills Evolution -->
+    <section class="skills-evolution">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-chart-line"></i>
+                Evoluzione delle Competenze
+            </h2>
+            <div class="evolution-timeline">
+                <div class="evolution-item">
+                    <div class="evolution-year">2022-2023</div>
+                    <div class="evolution-content">
+                        <h3>Fondamenta</h3>
+                        <div class="evolution-skills">
+                            <span class="skill-badge basic">Lavoro di squadra</span>
+                            <span class="skill-badge basic">Presentazione</span>
+                            <span class="skill-badge basic">Design thinking</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="evolution-item">
+                    <div class="evolution-year">2023-2024</div>
+                    <div class="evolution-content">
+                        <h3>Competenze Tecniche</h3>
+                        <div class="evolution-skills">
+                            <span class="skill-badge intermediate">Assemblaggio hardware</span>
+                            <span class="skill-badge intermediate">Controllo qualità</span>
+                            <span class="skill-badge intermediate">Strumentazione</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="evolution-item">
+                    <div class="evolution-year">2024-2025</div>
+                    <div class="evolution-content">
+                        <h3>Specializzazione</h3>
+                        <div class="evolution-skills">
+                            <span class="skill-badge advanced">IBWave</span>
+                            <span class="skill-badge advanced">Progettazione RF</span>
+                            <span class="skill-badge advanced">Simulazione tecnica</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
+        <div class="container">
             <div class="footer-content">
-                <div class="footer-section brand-section">
-                    <div class="footer-logo">
-                        <span class="logo-text">PCTO</span>
-                        <span class="logo-accent">Experience</span>
-                    </div>
-                    <p class="footer-description">
-                        Portfolio delle esperienze formative e del percorso di crescita professionale 
-                        di Giambanco Vincenzo.
-                    </p>
-                    <div class="social-links">
-                        <a href="https://github.com/Vinc-enz" target="_blank" rel="noopener" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:vincenzo.giambanco2006@gmail.com" class="social-link">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
-                </div>
-                
                 <div class="footer-section">
-                    <h3 class="footer-title">Competenze</h3>
-                    <ul class="footer-links">
-                        <li><a href="#technical-skills" class="footer-link">Competenze Tecniche</a></li>
-                        <li><a href="#soft-skills" class="footer-link">Soft Skills</a></li>
-                        <li><a href="esperienze.html" class="footer-link">Esperienze</a></li>
-                        <li><a href="contatti.html" class="footer-link">Contatti</a></li>
+                    <h3>Vincenzo Giambanco</h3>
+                    <p>Studente con passione per la tecnologia e l'innovazione</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Link Rapidi</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="esperienze.html">Esperienze</a></li>
+                        <li><a href="competenze.html">Competenze</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
                     </ul>
                 </div>
-                
                 <div class="footer-section">
-                    <h3 class="footer-title">Contatti Rapidi</h3>
-                    <ul class="footer-contacts">
-                        <li class="footer-contact">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:vincenzo.giambanco2006@gmail.com">vincenzo.giambanco2006@gmail.com</a>
-                        </li>
-                        <li class="footer-contact">
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+393313340464">+39 331 334 0464</a>
-                        </li>
-                        <li class="footer-contact">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Castel San Pietro Terme (BO)</span>
-                        </li>
-                    </ul>
+                    <h4>Contatti</h4>
+                    <p><i class="fas fa-envelope"></i> vincenzo.giambanco2006@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +39 331 344 0464</p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/Vinc-enz" target="_blank">GitHub</a></p>
                 </div>
             </div>
-            
             <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <p class="copyright">
-                        &copy; 2023 Giambanco Vincenzo. Tutti i diritti riservati.
-                    </p>
-                    <p class="footer-note">
-                        Realizzato con <i class="fas fa-heart"></i> per il percorso PCTO
-                    </p>
-                </div>
+                <p>&copy; 2025 Vincenzo Giambanco. Tutti i diritti riservati.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
