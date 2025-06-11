@@ -1,331 +1,217 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contatti | Giambanco Vincenzo</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti - Vincenzo Giambanco</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">
-                <span class="logo-text">PCTO</span>
-                <span class="logo-accent">Experience</span>
-            </a>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">
-                    <i class="fas fa-home nav-icon"></i>
+            <div class="nav-brand">
+                <i class="fas fa-graduation-cap brand-icon"></i>
+                <span>Vincenzo Giambanco</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
                     <span>Home</span>
-                </a></li>
-                <li><a href="esperienze.html" class="nav-link">
-                    <i class="fas fa-briefcase nav-icon"></i>
+                </a>
+                <a href="esperienze.html" class="nav-link">
+                    <i class="fas fa-briefcase"></i>
                     <span>Esperienze</span>
-                </a></li>
-                <li><a href="competenze.html" class="nav-link">
-                    <i class="fas fa-cogs nav-icon"></i>
+                </a>
+                <a href="competenze.html" class="nav-link">
+                    <i class="fas fa-cogs"></i>
                     <span>Competenze</span>
-                </a></li>
-                <li><a href="contatti.html" class="nav-link active">
-                    <i class="fas fa-envelope nav-icon"></i>
+                </a>
+                <a href="contatti.html" class="nav-link active">
+                    <i class="fas fa-envelope"></i>
                     <span>Contatti</span>
-                </a></li>
-            </ul>
-            <button class="hamburger" aria-label="Menu">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero-section">
-        <div class="hero-background">
-            <div class="floating-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-                <div class="shape shape-4"></div>
-            </div>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">
+                <i class="fas fa-envelope"></i>
+                Contattami
+            </h1>
+            <p class="page-subtitle">Parliamo del mio percorso PCTO e delle opportunità future</p>
         </div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="title-line">Mettiamoci</span>
-                    <span class="title-line gradient-text">in Contatto</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Hai domande sul mio percorso formativo? Vuoi collaborare su un progetto? 
-                    <br>Sono sempre aperto a nuove opportunità e conversazioni interessanti.
-                </p>
-            </div>
-            <div class="hero-cta">
-                <a href="#contact-form" class="cta-button primary">
-                    <i class="fas fa-paper-plane"></i>
-                    <span>Scrivimi ora</span>
-                </a>
-                <a href="#contact-info" class="cta-button secondary">
-                    <i class="fas fa-info-circle"></i>
-                    <span>Info di contatto</span>
-                </a>
-            </div>
-        </div>
-    </header>
+    </section>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <!-- Contact Grid Section -->
-        <section class="contact-section" id="contact-info">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Informazioni di Contatto</h2>
-                    <p class="section-subtitle">Scegli il metodo che preferisci per raggiungermi</p>
-                </div>
-
-                <div class="contact-grid">
-                    <!-- Contact Cards -->
-                    <div class="contact-cards">
-                        <div class="contact-card email-card">
-                            <div class="card-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="card-content">
-                                <h3 class="card-title">Email</h3>
-                                <p class="card-description">Scrivimi per qualsiasi informazione</p>
-                                <a href="mailto:vincenzo.giambanco2006@gmail.com" class="card-link">
-                                    vincenzo.giambanco2006@gmail.com
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="contact-card phone-card">
-                            <div class="card-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="card-content">
-                                <h3 class="card-title">Telefono</h3>
-                                <p class="card-description">Chiamami per una chat veloce</p>
-                                <a href="tel:+393313340464" class="card-link">
-                                    +39 331 334 0464
-                                    <i class="fas fa-phone"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="contact-card github-card">
-                            <div class="card-icon">
-                                <i class="fab fa-github"></i>
-                            </div>
-                            <div class="card-content">
-                                <h3 class="card-title">GitHub</h3>
-                                <p class="card-description">Scopri i miei progetti</p>
-                                <a href="https://github.com/Vinc-enz" target="_blank" rel="noopener" class="card-link">
-                                    github.com/Vinc-enz
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="contact-card location-card">
-                            <div class="card-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="card-content">
-                                <h3 class="card-title">Posizione</h3>
-                                <p class="card-description">Dove mi trovo</p>
-                                <div class="card-link location-text">
-                                    Via Roma 123<br>
-                                    40024 Castel San Pietro Terme (BO)
-                                </div>
-                            </div>
-                        </div>
+    <!-- Contact Info -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card" data-aos="fade-up">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
                     </div>
-
-                    <!-- Contact Form -->
-                    <div class="form-container" id="contact-form">
-                        <div class="form-card">
-                            <div class="form-header">
-                                <h2 class="form-title">Invia un Messaggio</h2>
-                                <p class="form-subtitle">Compila il form e ti risponderò il prima possibile</p>
-                            </div>
-                            
-                            <form class="contact-form" action="#" method="POST">
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <label for="name" class="form-label">Nome Completo</label>
-                                        <div class="input-wrapper">
-                                            <i class="fas fa-user input-icon"></i>
-                                            <input type="text" id="name" name="name" required 
-                                                   placeholder="Il tuo nome" class="form-input" />
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <label for="email" class="form-label">Email</label>
-                                        <div class="input-wrapper">
-                                            <i class="fas fa-envelope input-icon"></i>
-                                            <input type="email" id="email" name="email" required 
-                                                   placeholder="La tua email" class="form-input" />
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="subject" class="form-label">Oggetto</label>
-                                    <div class="input-wrapper">
-                                        <i class="fas fa-tag input-icon"></i>
-                                        <input type="text" id="subject" name="subject" required 
-                                               placeholder="Oggetto del messaggio" class="form-input" />
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="message" class="form-label">Messaggio</label>
-                                    <div class="input-wrapper">
-                                        <i class="fas fa-comment input-icon"></i>
-                                        <textarea id="message" name="message" rows="6" required 
-                                                  placeholder="Scrivi qui il tuo messaggio..." class="form-input form-textarea"></textarea>
-                                    </div>
-                                </div>
-                                
-                                <button type="submit" class="submit-button">
-                                    <span class="button-text">Invia Messaggio</span>
-                                    <i class="fas fa-paper-plane button-icon"></i>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Map Section -->
-        <section class="map-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Dove Mi Trovo</h2>
-                    <p class="section-subtitle">Castel San Pietro Terme, Emilia-Romagna</p>
+                    <h3>Email</h3>
+                    <p>Scrivimi per qualsiasi informazione</p>
+                    <a href="mailto:vincenzo.giambanco2006@gmail.com" class="contact-link">
+                        vincenzo.giambanco2006@gmail.com
+                    </a>
                 </div>
                 
-                <div class="map-container">
-                    <div class="map-overlay">
-                        <div class="map-info">
-                            <h3>📍 La Mia Posizione</h3>
-                            <p>Castel San Pietro Terme<br>Provincia di Bologna</p>
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telefono</h3>
+                    <p>Chiamami o inviami un messaggio</p>
+                    <a href="tel:+393313440464" class="contact-link">
+                        +39 331 344 0464
+                    </a>
+                </div>
+                
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>Scopri i miei progetti e codice</p>
+                    <a href="https://github.com/Vinc-enz" target="_blank" class="contact-link">
+                        github.com/Vinc-enz
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-paper-plane"></i>
+                Invia un Messaggio
+            </h2>
+            <div class="form-container">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome">Nome *</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cognome">Cognome *</label>
+                            <input type="text" id="cognome" name="cognome" required>
                         </div>
                     </div>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2846.789807234726!2d11.58921531555694!3d44.45949097910199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e39e70b8c5f1d%3A0x1f3a07752b5d6b1a!2sCastel%20San%20Pietro%20Terme%2C%20Metropolitan%20City%20of%20Bologna!5e0!3m2!1sen!2sit!4v1629999999999!5m2!1sen!2sit"
-                        width="100%"
-                        height="500"
-                        style="border:0;"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                        class="map-iframe">
-                    </iframe>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-content">
-                    <h2 class="cta-title">Pronto a Iniziare una Conversazione?</h2>
-                    <p class="cta-subtitle">
-                        Non esitare a contattarmi per qualsiasi domanda, proposta di collaborazione 
-                        o semplicemente per fare due chiacchiere sul mondo della tecnologia.
-                    </p>
-                    <div class="cta-buttons">
-                        <a href="mailto:vincenzo.giambanco2006@gmail.com" class="cta-btn primary">
-                            <i class="fas fa-envelope"></i>
-                            <span>Scrivimi una Email</span>
-                        </a>
-                        <a href="https://github.com/Vinc-enz" target="_blank" rel="noopener" class="cta-btn secondary">
-                            <i class="fab fa-github"></i>
-                            <span>Vedi i Progetti</span>
-                        </a>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="argomento">Argomento *</label>
+                        <select id="argomento" name="argomento" required>
+                            <option value="">Seleziona un argomento</option>
+                            <option value="pcto">Informazioni sul PCTO</option>
+                            <option value="competenze">Competenze acquisite</option>
+                            <option value="collaborazione">Opportunità di collaborazione</option>
+                            <option value="stage">Proposte di stage</option>
+                            <option value="altro">Altro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="messaggio">Messaggio *</label>
+                        <textarea id="messaggio" name="messaggio" rows="6" required placeholder="Scrivi qui il tuo messaggio..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-submit">
+                        <i class="fas fa-paper-plane"></i>
+                        Invia Messaggio
+                    </button>
+                </form>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-link"></i>
+                Link Rapidi
+            </h2>
+            <div class="quick-links-grid">
+                <a href="esperienze.html" class="quick-link-card">
+                    <div class="quick-link-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Le Mie Esperienze</h3>
+                    <p>Scopri il percorso PCTO completo</p>
+                    <span class="quick-link-arrow">→</span>
+                </a>
+                
+                <a href="competenze.html" class="quick-link-card">
+                    <div class="quick-link-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Competenze Acquisite</h3>
+                    <p>Skills tecniche e trasversali</p>
+                    <span class="quick-link-arrow">→</span>
+                </a>
+                
+                <a href="index.html" class="quick-link-card">
+                    <div class="quick-link-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Homepage</h3>
+                    <p>Panoramica del percorso</p>
+                    <span class="quick-link-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
+        <div class="container">
             <div class="footer-content">
-                <div class="footer-section brand-section">
-                    <div class="footer-logo">
-                        <span class="logo-text">PCTO</span>
-                        <span class="logo-accent">Experience</span>
-                    </div>
-                    <p class="footer-description">
-                        Portfolio delle esperienze formative e del percorso di crescita professionale 
-                        di Giambanco Vincenzo.
-                    </p>
-                    <div class="social-links">
-                        <a href="https://github.com/Vinc-enz" target="_blank" rel="noopener" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:vincenzo.giambanco2006@gmail.com" class="social-link">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
-                </div>
-                
                 <div class="footer-section">
-                    <h3 class="footer-title">Navigazione</h3>
-                    <ul class="footer-links">
-                        <li><a href="index.html" class="footer-link">Home</a></li>
-                        <li><a href="esperienze.html" class="footer-link">Esperienze</a></li>
-                        <li><a href="competenze.html" class="footer-link">Competenze</a></li>
-                        <li><a href="contatti.html" class="footer-link">Contatti</a></li>
+                    <h3>Vincenzo Giambanco</h3>
+                    <p>Studente con passione per la tecnologia e l'innovazione</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Link Rapidi</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="esperienze.html">Esperienze</a></li>
+                        <li><a href="competenze.html">Competenze</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
                     </ul>
                 </div>
-                
                 <div class="footer-section">
-                    <h3 class="footer-title">Contatti Rapidi</h3>
-                    <ul class="footer-contacts">
-                        <li class="footer-contact">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:vincenzo.giambanco2006@gmail.com">vincenzo.giambanco2006@gmail.com</a>
-                        </li>
-                        <li class="footer-contact">
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+393313340464">+39 331 334 0464</a>
-                        </li>
-                        <li class="footer-contact">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Castel San Pietro Terme (BO)</span>
-                        </li>
-                    </ul>
+                    <h4>Contatti</h4>
+                    <p><i class="fas fa-envelope"></i> vincenzo.giambanco2006@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +39 331 344 0464</p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/Vinc-enz" target="_blank">GitHub</a></p>
                 </div>
             </div>
-            
             <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <p class="copyright">
-                        &copy; 2023 Giambanco Vincenzo. Tutti i diritti riservati.
-                    </p>
-                    <p class="footer-note">
-                        Realizzato con <i class="fas fa-heart"></i> per il percorso PCTO
-                    </p>
-                </div>
+                <p>&copy; 2025 Vincenzo Giambanco. Tutti i diritti riservati.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
