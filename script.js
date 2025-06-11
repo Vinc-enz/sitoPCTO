@@ -1,192 +1,177 @@
-        // Mobile menu toggle
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
-    
-    if (hamburger && navMenu) {
-        hamburger.addEventListener('click', function() {
-            this.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-    }
-    
-    // Close mobile menu when clicking on a link
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            if (hamburger.classList.contains('active')) {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            }
-        });
+document.addEventListener('DOMContentLoaded', function() {
+  // Mobile Navigation Toggle
+  const navToggle = document.getElementById('nav-toggle');
+  const navMenu = document.getElementById('nav-menu');
+  
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', function() {
+      navToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
     });
-    
-    // Back to top button
-    const backToTopButton = document.getElementById('backToTop');
-    
-    window.addEventListener('scroll', function() {
-        if (window.pageYOffset > 300) {
-            backToTopButton.classList.add('visible');
-        } else {
-            backToTopButton.classList.remove('visible');
-        }
-    });
-    
-    backToTopButton.addEventListener('click', function() {
+  }
+  
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        const headerHeight = document.getElementById('navbar').offsetHeight;
+        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+        
         window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+          top: targetPosition,
+          behavior: 'smooth'
         });
+        
+        // Close mobile menu if open
+        if (navMenu.classList.contains('active')) {
+          navToggle.classList.remove('active');
+          navMenu.classList.remove('active');
+        }
+      }
     });
-    
-    // Animate skill level bars when they come into view
-    const skillBars = document.querySelectorAll('.level-bar');
-    
-    function animateSkillBars() {
-        skillBars.forEach(bar => {
-            const level = bar.getAttribute('data-level');
-            if (isElementInViewport(bar) {
-                bar.style.width = level + '%';
-            }
-        });
-    }
-    
-    // Check if element is in viewport
-    function isElementInViewport(el) {
-        const rect = el.getBoundingClientRect();
-        return (
-            rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.bottom >= 0
-        );
-    }
-    
-    // Run on load and scroll
-    animateSkillBars();
-    window.addEventListener('scroll', animateSkillBars);
-    
-    // Animate progress timeline
-    const progressBars = document.querySelectorAll('.progress-bar');
-    
-    function animateProgressBars() {
-        progressBars.forEach(bar => {
-            const progress = bar.getAttribute('data-progress');
-            if (isElementInViewport(bar)) {
-                bar.style.width = progress + '%';
-            }
-        });
-    }
-    
-    // Run on load and scroll
-    animateProgressBars();
-    window.addEventListener('scroll', animateProgressBars);
-    
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-            
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-            }
-        });
+  });
+  
+  // Sticky navbar on scroll
+  const navbar = document.getElementById('navbar');
+  if (navbar) {
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.2)';
+      } else {
+        navbar.style.boxShadow = 'none';
+      }
     });
+  }
+  
+  // Form submission handling
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form values
+      const formData = new FormData(contactForm);
+      const formValues = Object.fromEntries(formData.entries());
+      
+      // Here you would typically send the form data to a server
+      console.log('Form submitted:', formValues);
+      
+      // Show success message
+      alert('Grazie per il tuo messaggio! Ti risponderò al più presto.');
+      
+      // Reset form
+      contactForm.reset();
+    });
+  }
+  
+  // Animate skill bars on scroll
+  const skillBars = document.querySelectorAll('.skill-progress');
+  if (skillBars.length > 0) {
+    const animateSkillBars = () => {
+      skillBars.forEach(bar => {
+        const width = bar.style.width;
+        bar.style.width = '0';
+        
+        setTimeout(() => {
+          bar.style.width = width;
+        }, 100);
+      });
+    };
     
-    // Contact form submission
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const name = this.querySelector('#name').value;
-            const email = this.querySelector('#email').value;
-            const subject = this.querySelector('#subject').value;
-            const message = this.querySelector('#message').value;
-            
-            // Here you would typically send the form data to a server
-            // For this example, we'll just show a success message
-            alert(`Grazie ${name}! Il tuo messaggio è stato inviato con successo. Ti risponderò al più presto.`);
-            
-            // Reset form
-            this.reset();
-        });
-    }
-    
-    // Intersection Observer for animations
-    const animateElements = document.querySelectorAll('.animate-fade-up, .animate-slide-up, .animate-slide-left, .animate-slide-right, .animate-zoom-in, .animate-fade-in');
-    
+    // Use Intersection Observer to trigger animation when element is in view
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animated');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.1
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateSkillBars();
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    
+    document.querySelectorAll('.skills-list').forEach(section => {
+      observer.observe(section);
+    });
+  }
+  
+  // Animate progress circles
+  const progressCircles = document.querySelectorAll('.skill-progress-circle');
+  if (progressCircles.length > 0) {
+    const animateProgressCircles = () => {
+      progressCircles.forEach(circle => {
+        const percentage = circle.getAttribute('data-percentage');
+        const path = circle.querySelector('path:nth-child(2)');
+        
+        if (path) {
+          const circumference = 2 * Math.PI * 15.9155;
+          const offset = circumference - (percentage / 100) * circumference;
+          path.style.strokeDashoffset = offset;
+        }
+      });
+    };
+    
+    // Use Intersection Observer to trigger animation when element is in view
+    const circleObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateProgressCircles();
+          circleObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    
+    progressCircles.forEach(circle => {
+      circleObserver.observe(circle);
+    });
+  }
+  
+  // Simple AOS (Animate On Scroll) implementation
+  const aosElements = document.querySelectorAll('[data-aos]');
+  if (aosElements.length > 0) {
+    const aosObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('aos-animate');
+          aosObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    aosElements.forEach(element => {
+      aosObserver.observe(element);
+    });
+  }
+  
+  // Floating card hover effect
+  const floatingCards = document.querySelectorAll('.floating-card');
+  floatingCards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const x = e.clientX - card.getBoundingClientRect().left;
+      const y = e.clientY - card.getBoundingClientRect().top;
+      
+      const centerX = card.offsetWidth / 2;
+      const centerY = card.offsetHeight / 2;
+      
+      const angleX = (y - centerY) / 10;
+      const angleY = (centerX - x) / 10;
+      
+      card.style.transform = `perspective(1000px) rotateX(${angleX}deg) rotateY(${angleY}deg)`;
     });
     
-    animateElements.forEach(element => {
-        observer.observe(element);
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
     });
-    
-    // Reading progress indicator
-    const readingProgress = document.getElementById('progressBar');
-    if (readingProgress) {
-        window.addEventListener('scroll', function() {
-            const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrollProgress = (scrollTop / scrollHeight) * 100;
-            readingProgress.style.width = scrollProgress + '%';
-        });
-    }
-    
-    // Floating shapes animation
-    const shapes = document.querySelectorAll('.shape');
-    if (shapes.length > 0) {
-        shapes.forEach((shape, index) => {
-            // Random initial position and animation
-            const randomX = Math.random() * 20 - 10;
-            const randomY = Math.random() * 20 - 10;
-            const randomDelay = Math.random() * 5;
-            const randomDuration = 10 + Math.random() * 20;
-            
-            shape.style.transform = `translate(${randomX}px, ${randomY}px)`;
-            shape.style.animation = `float ${randomDuration}s ease-in-out ${randomDelay}s infinite alternate`;
-        });
-    }
-    
-    // Add floating animation to particles
-    const particles = document.querySelectorAll('.particle');
-    if (particles.length > 0) {
-        particles.forEach((particle, index) => {
-            const randomDuration = 15 + Math.random() * 15;
-            const randomDelay = Math.random() * 10;
-            
-            particle.style.animation = `float ${randomDuration}s ease-in-out ${randomDelay}s infinite alternate`;
-        });
-    }
+  });
+  
+  // Set current year in footer
+  const yearElement = document.querySelector('.footer-bottom p');
+  if (yearElement) {
+    const currentYear = new Date().getFullYear();
+    yearElement.textContent = yearElement.textContent.replace('2025', currentYear);
+  }
 });
-
-// Add CSS for floating animation
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes float {
-        0% {
-            transform: translate(0, 0);
-        }
-        50% {
-            transform: translate(10px, 10px);
-        }
-        100% {
-            transform: translate(-10px, -10px);
-        }
-    }
-`;
-document.head.appendChild(style);
